@@ -15,6 +15,8 @@ app.use(cors());
 app.set('port', 8000);
 
 app.use('/barbearias', require('./src/routes/barbearia.routes'));
+app.use('/servico', require('./src/routes/servico.routes'));
+
 
 
 app.listen(app.get('port'), () => {
